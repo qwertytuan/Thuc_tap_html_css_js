@@ -117,7 +117,7 @@ animation: rotationBack 1s ease-in-out infinite reverse;
     z-index: 1;
 }
 .dates li.inactive{
-    background: #2f0ddb;
+    background: #2400ed;
     color: #fff;
     border-radius: 50%;
 }

@@ -1,6 +1,6 @@
 const header =document.querySelector(".Calendar h3");
 const dates=document.querySelector(".dates");
-const nav=document.querySelector("#prev,#next");
+const navs=document.querySelectorAll("#prev,#next");
 
 const months=
 [
@@ -51,7 +51,7 @@ function renderCalendar()
 }
 
 navs.forEach((nav) => {
-    navs.addEventListener("click", (e) =>
+    nav.addEventListener("click", (e) =>
 {
 const btnId=e.target.id;
 if(btnId==="prev"&&month===0)
