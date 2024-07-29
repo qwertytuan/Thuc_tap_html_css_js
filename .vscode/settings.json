@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "Thuc_tap",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.https": {
+        "enable": true
+    }
+}
