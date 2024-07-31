@@ -1,0 +1,153 @@
+<div class="btnContainer">
+    <button class ="btn btn--ok">OK</button>
+    <button class ="btn btn--notok">NOT OK</button>
+    <button class ="btn btn--clear">CLEAR</button>
+ </div>
+ <div class="btnContainer">
+    <button class ="btn btn--size--large  btn--ok">OK</button>
+    <button class ="btn btn--size--large btn--notok">NOT OK</button>
+    <button class ="btn btn--size--large btn--clear">CLEAR</button>
+ </div>
+ <div class="btnContainer">
+    <button class ="btn btn--size--small btn--ok">OK</button>
+    <button class ="btn btn--size--small btn--notok">NOT OK</button>
+    <button class ="btn btn--size--small btn--clear">CLEAR</button>
+ </div>
+
+
+
+
+
+
+
+<!--Thanh Cong-->
+<div class="toast toast--success">
+
+    <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+    </div>
+
+    <div class="toast__boddy">
+        <h3 class="toast--title">Thành công</h3>
+        <p class="toast--msg">Bạn đã thêm vào giỏ hàng thành công</p>
+    </div>
+
+    <div class="toast__close">
+        <i class="fas fa-times"></i>
+    </div>
+
+</div>
+<!--That Bai-->
+<div class="toast toast--error">
+
+    <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+    </div>
+
+    <div class="toast__boddy">
+        <h3 class="toast--title">THất Bại</h3>
+        <p class="toast--msg">Bạn chưa thêm thành công</p>
+    </div>
+
+    <div class="toast__close">
+        <i class="fas fa-times"></i>
+    </div>
+
+</div>
+<!--Canh Bao-->
+<div class="toast toast--warn">
+
+    <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+    </div>
+
+    <div class="toast__boddy">
+        <h3 class="toast--title">Cảnh Báo</h3>
+        <p class="toast--msg">Bạn chưa thêm vào giỏ hàng</p>
+    </div>
+
+    <div class="toast__close">
+        <i class="fas fa-times"></i>
+    </div>
+
+</div>
+
+
+.btnContainer + .btnContainer
+{
+  margin-top: 30px;
+}
+
+.btnContainer
+{
+  margin-top: 20px;
+justify-content: center;
+flex-direction: column;
+
+display: flex;
+}
+.btn + .btn
+{
+  margin: 10px;
+}
+
+.btn{
+text-decoration: none;
+border: none;
+padding: 12px 48px;
+color: white;
+border-radius: 50px;
+cursor: pointer;
+outline: none;
+transition: opacity 0.3s ease;
+}
+.btn:hover
+{
+  opacity: 0.4;
+}
+.btn--ok
+{
+  background-color: #ff0000;
+}
+
+.btn--notok
+{
+  background-color: #2f00ff;
+}
+
+.btn--clear
+{
+  background-color: #14ed08;
+}
+
+ <div class="toast toast--success">
+
+    <div class="toast__icon">
+        <i class="fas fa-check-circle"></i>
+    </div>
+
+    <div class="toast__boddy">
+        <h3 class="toast--title">Thành công</h3>
+        <p class="toast--msg">Bạn đã thêm vào giỏ hàng thành công</p>
+    </div>
+
+    <div class="toast__close">
+        <i class="fas fa-times"></i>
+    </div>
+
+</div>
+<!--That Bai-->
+<div class="toast toast--error">
+
+    <div class="toast__icon">
+        <i class="fas fa-exclamation-circle"></i>
+    </div>
+
+    <div class="toast__boddy">
+        <h3 class="toast--title">Thất Bại</h3>
+        <p class="toast--msg">Bạn chưa thêm thành công</p>
+    </div>
+
+    <div class="toast__close">
+        <i class="fas fa-times"></i>
+    </div>
