@@ -5,7 +5,6 @@
     type = 'Success',
     duration = 3000 }) {
         const main = document.getElementById('toast');
-
         if(main)
         {
 
