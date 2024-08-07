@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" type="text/css" href="assset/css/Trang_chu.css">
+  <link rel="stylesheet" type="text/css" href="assset/css/output.css">
   <link rel="stylesheet" type="text/css" href="assset/css/base.css">
+  <link rel="stylesheet" type="text/css" href="assset/css/animation.css">
 </head>
 
 <body>
@@ -116,7 +117,49 @@
             </svg>
           </div>
           <div class="header__search">
-            <input type="text" class="header__search-input" placeholder="Tim san pham, thuong hieu, va ten shop">
+            <div class="header__search-input-warp">
+              <input type="text" class="header__search-input" placeholder="Tim san pham, thuong hieu, va ten shop">
+              <div class="header__search-history">
+                <h4 class="header__search-history-title">
+                  Lich su tim kiem
+                </h4>
+                <ul class="header__search-history-list">
+                  <li class="header__search-history-item">
+                    <a href="" class="header__search-history-link">Iphone 13</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="" class="header__search-history-link">Iphone 12</a>
+                  </li>
+                  <li class="header__search-history-item">
+                    <a href="" class="header__search-history-link">Iphone 11</a>
+                  </li>
+              </div>
+            </div>
+            <span class="header__splash"></span>
+            <div class="header__search-select header__search-showselect">
+              <span class="header__search-panel">Trong cua hang</span>
+              <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+              <ul class="header__search-option">
+                <li class="header__search-option-item header__search-option-itemIsviewed IsOn">
+                  <div class="header__search-option-item-container">
+                    <span class="header__search-option-item-text">Trong cua hang</span>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </li>
+                <li class="header__search-option-item header__search-option-itemIsviewed">
+                  <div class="header__search-option-item-container">
+                    <span class="header__search-option-item-text">Trong cua hang</span>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </li>
+                <li class="header__search-option-item header__search-option-itemIsviewed">
+                  <div class="header__search-option-item-container">
+                    <span class="header__search-option-item-text">Trong cua hang</span>
+                    <i class="fa-solid fa-check"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <button class="btn-search">
             <svg height="19"
                 viewBox="0 0 19 19" width="19" class="shopee-svg-icon">
@@ -139,13 +182,64 @@
               </svg>
             </button>
         </div>
-        <div class="header__cart">
-          
+        <div class="header__cart CartHover">
+          <a href="" class="header__cart-link">
+            <i class="header__cart-icon fas fa-shopping-cart"></i>
+            <span class="header__cart-notice">3</span>
+          </a>
+          <div class="header__cart-list">
+            <ul class="header__cart-listing">
+              <li class="header__cart-list-item">
+                <a href="" class="header__item-info">
+                  <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnzjs8kc4fe5bb_tn" alt=""
+                    class="header__item-img">
+                    <div class="header__item-detail">
+                      <h3 class="header__item-name">Iphone 13</h3>
+                      <div class="header__item-body-info">
+                        <span class="header__item-price">Gia tien:1.000.000d</span>
+                        <span class="header__item-quantity">x1</span>
+                      </div>
+                    </div>
+                  </a>
+              </li>
+              <li class="header__cart-list-item">
+                <a href="" class="header__item-info">
+                  <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnzjs8kc4fe5bb_tn" alt=""
+                    class="header__item-img">
+                    <div class="header__item-detail">
+                      <h3 class="header__item-name">Iphone 13</h3>
+                      <div class="header__item-body-info">
+                        <span class="header__item-price">Gia tien:1.000.000d</span>
+                        <span class="header__item-quantity">x1</span>
+                      </div>
+                    </div>
+                  </a>
+              </li>
+              <li class="header__cart-list-item">
+                <a href="" class="header__item-info">
+                  <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lnzjs8kc4fe5bb_tn" alt=""
+                    class="header__item-img">
+                    <div class="header__item-detail">
+                      <h3 class="header__item-name">Iphone 13</h3>
+                      <div class="header__item-body-info">
+                        <span class="header__item-price">Gia tien:1.000.000d</span>
+                        <span class="header__item-quantity">x1</span>
+                      </div>
+                    </div>
+                  </a>
+              </li>
+            </ul>
+            <div class="header__show-cart">
+              <a href="" class="header__link-to-cart">
+                <span class="header__cart-view">Xem gio hang</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="container">
-
+      
     </div>
     <div class="footer">
 
