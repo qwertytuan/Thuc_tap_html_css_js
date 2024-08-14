@@ -1,5 +1,7 @@
 :root
 {
+    --liked-color:rgb(255, 222, 5);
+    --input-height:26px;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -22,7 +24,7 @@ html{
     box-sizing: border-box;
 }
 .grid{
-    width: 1200px;
+    width: 1300px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -34,7 +36,28 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
+.grid__columns-2{
+/* padding-left: 12px;
+padding-right: 12px; */
+width: 16.6667%;
+}
+
+.grid__columns-2-4{
+padding-left: 12px;
+padding-right: 12px;
+width: 20%;
+
+}
+.grid__columns-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: calc(100% - 16.6667%);
+
+}
+
 
 
 .modal
@@ -72,13 +95,52 @@ z-index: 1;
 }
 
 .container{
-    width: 100%;
-    min-height: 200px;
-    background-color: #333;
+background-color: #f5f5f5;
+display: flex;
 }
 
 
+.pagination{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 50px 32px;
 
+}
+
+.pagination-item{
+color: var(--white-color);
+margin-left: 20px;
+}
+
+.pagination-item-link{
+font-size: 1.4rem;
+font-weight:600;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+color: var(--text-color);
+display: flex;
+min-width: 40px;
+height: 30px;
+color: #939393;
+border-radius: 2px;
+transition: ease-in 0.2s;
+}
+.IsOn .pagination-item-link{
+    background-color: var(--default-color);
+    color: var(--white-color);
+    cursor: default;
+}
+.pagination-item-link:hover{
+    background-color: var(--default-color);
+    color: var(--white-color);
+}
+
+.pagination-item-icon{
+
+}
 
 
 

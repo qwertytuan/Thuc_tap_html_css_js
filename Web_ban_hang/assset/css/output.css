@@ -1517,3 +1517,54 @@ display: block;
 .IsSpecial:hover .header__user-link{
   background-color: #e70e0ebc;
 }
+
+.body-grid{
+  margin-top: 20px;
+}
+.category{
+  background-color: var(--white-color);
+  border-radius: 2px;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+.category-heading{
+font-size: 1.8rem;
+color: var(--text-color);
+padding: 0 16px;
+margin-right: 12px;
+}
+.category-heading i{
+font-size: 1.5rem;
+}
+
+.category-list{
+
+}
+
+.category-item{
+
+}
+
+.category-item--active{
+
+}
+
+.category-item-link{
+
+}
+
+.category-item{
+
+}
+
+.category-item-link{
+
+}
+
+.category-item{
+
+}
+
+.category-item-link{
+  
+}
