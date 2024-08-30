@@ -12,14 +12,30 @@
     //         header.classList.remove('hidden');
     //     }
     //     lastScrollTop = scrollTop;
+    function Dropdown() {
+      const dropdown=document.getElementById('drop-down-menu');
+      if(dropdown.style.display==='flex'){
+          dropdown.style.display='none';
+      }else{
+          dropdown.style.display='flex';
+      }
+  }
     // });
 
+function sendinfo(){
+const name=document.getElementById('name').value;
+const email=document.getElementById('email').value;
+const message=document.getElementById('message').value;
+if(name==='' || email==='' || message===''){
+    alert('Please fill in all fields');
 
-    const sendButton = document.getElementById('send-button');
-sendButton.addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    alert('Message sent!');
-});
+}
+else{
+    console.log(name+' '+email+' '+message);
+}
+
+  
+}
 
 // const ModalOn=document.getElementsByClassName('buy-ticket-btn');
 // ModalOn.onclick=function(event){
@@ -82,3 +98,27 @@ function carousel() {
   setTimeout(carousel, 4000);    
 }
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const observerOptions = {
+      root: null, // Use the viewport as the root
+      rootMargin: "0px",
+      threshold: 0.1 // Trigger when 10% of the element is visible
+  };
+
+  const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Stop observing once the element is visible
+          }
+      });
+  };
+
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+  document.querySelectorAll(".lazy-load").forEach(element => {
+      observer.observe(element);
+  });
+});

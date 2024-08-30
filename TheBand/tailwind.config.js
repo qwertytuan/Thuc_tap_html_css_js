@@ -8,7 +8,9 @@ module.exports = {
         'hover-bg': '#ccc',
         'text-2': '#6f6f6f',
         'border-color': '#ddd',
-        'color_overlay': 'rgba(0, 0, 0, 0.4)'
+        'color_overlay': 'rgba(0, 0, 0, 0.4)',
+        'transparent': 'rgba(0,0,0,0)',
+        'greenish':'#009688'
       },
       grayscale: {
         50: '50%',
@@ -19,6 +21,10 @@ module.exports = {
       lineHeight: {
         '5.5': '1.406rem',
       },
+      width: {
+        'fullriel': '100vw',
+        'mosthalf': '49.8%',
+      }
     },
   },
   plugins: [
@@ -29,6 +35,9 @@ module.exports = {
         'h2': { fontSize: theme('fontSize.2xl') },
         'h3': { fontSize: theme('fontSize.lg') },
       })
+    }),
+    plugin(function({ addVariant }) {
+      addVariant('scrollbar-corner', ['&::-webkit-scrollbar-corner','&::scrollbar-corner'])
     })
   ]
 }
