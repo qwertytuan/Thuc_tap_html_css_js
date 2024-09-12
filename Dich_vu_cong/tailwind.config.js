@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        'white_ish':'#f3f3f3',
         'hover-bg': '#ccc',
         'text-2': '#6f6f6f',
         'border-color': '#ddd',
@@ -17,13 +18,31 @@ module.exports = {
       },
       boxShadow: {
         'custom':'0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)',
+        'custom_redish':'inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(215, 25, 32, 0.4)'
       },
       lineHeight: {
         '5.5': '1.406rem',
       },
       width: {
+        '1200': '1200px',
         'fullriel': '100vw',
         'mosthalf': '49.8%',
+        'longlong':'3960px',
+        'slidele':'360px',
+      },
+
+
+      height:{
+        'logo_height': '90px',
+        'calced1': 'calc(100vh - 200px)',
+      },
+
+      backgroundImage: {
+        'header_bg':'url(./assest/img/bg-banner.jpg)',
+      },
+      spacing: {
+        '5.5':'22px',
+        '1200': '1200px',
       }
     },
   },

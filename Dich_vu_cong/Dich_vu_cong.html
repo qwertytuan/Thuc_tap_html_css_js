@@ -7,25 +7,189 @@
     <link rel="stylesheet" href="./assest/css/base.css">
     <link rel="stylesheet" href="./assest/css/style.css">
     <link rel="stylesheet" href="./assest/font/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
-<body class="flex w-full h-full items-center justify-center">
+<body class="block w-full h-full overflow-x-hidden">
+    <div class="w-full flex items-center justify-center py-4 bg-cover border-b-2 border-red-600" style="background-image: url(./assest/img/bg-header.png);">
+        <div class="container relative max-w-1200 w-full pb-4 flex items-center align-middle m-auto justify-between gap-x-2.5">
+            <a href="#" class="uppercase flex items-center">
+                <span class="logo mr-4">
+                    <img src="./assest/img/logo.png" alt="logo" class="h-logo_height">
+                </span>
+                <span class="title text-red-600 font-bold text-3xl text-center">
+                    Cổng dịch vụ công
+                    <br class="">
+                    Bộ công an
+                </span>
+            </a>
+            <div class="option font-medium inline-flex items-center justify-center">
+                <select title="lang-opt" name="lang-opt" id="lang-opt" class="p-1 rounded-md shadow-custom_redish mr-2 outline-none">
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="en">English</option>
+                </select>
+                <a href="#" class="Dang_nhap block hover:text-red-500 mr-2 font-semibold">
+                    Đăng nhập
+                </a>
+                <span class="divide-bar mr-2">|</span> 
+                <a href="#" class="Dang_ky block hover:text-red-500 mr-2 font-semibold">
+                    Đăng ký
+                </a>
+            </div>
+            
 
-    <header class="flex flex-row items-center w-full pt-4">
-        <div class="col1 inline-flex items-center w-1/2">
-            <img src="./assest/img/logo.png" alt="logo" class="ml-auto h-24">
-            <span class="w-1/2 mr-auto ml-4 text-red-600 font-bold uppercase text-center text-2xl">
-                Cổng dịch vụ công
-                <br>
-                bộ công an
-                </br>
-            </span>
+            <!--  -->
+            <div class="nav_bar absolute -bottom-10 right-auto left-auto hidden items-center w-full bg-red-600 leading-6 lg:flex">
+                <a href="#" title="home" class="nav_bar-item block max-w-4 px-4 py-2 text-white font-semibold bg-red-700 box-content">
+                    <span>
+                        <i class="fas fa-house"></i>
+                    </span>
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Thủ tục hành chính
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Tra cứu hồ sơ
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Nộp hồ sơ trực tuyến
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Phản ánh kiến nghị
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Đánh giá
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Văn bản
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Hỏi đáp
+                </a>
+                <a href="#" class="nav_bar-item block max-w-48 px-4 py-2 text-white font-semibold hover:bg-red-700 box-content">
+                    Hỗ trợ
+                </a>
+            </div>
         </div>
-        <div class="col2 inline-flex items-center justify-center w-1/2">
-            <select title="option" name="lang" id="">
-                <option value="1">Tiếng Việt</option>
-                <option value="2">English</option>
-            </select>
+    </div>
+
+    <div class="content-banner w-full h-80 flex items-center justify-center bg-cover bg-bottom bg-no-repeat"
+        style="background-image: url(./assest/img/bg-banner.jpg);">
+        <div class="container max-w-1200 w-full pb-4 flex items-center -mt-10">
+            <div class="content-row-1 text-red-600 font-normal py-2.5 pr-4">
+    
+                <h3 class="title font-semibold">6 ĐIỀU BÁC HỒ DẠY CÔNG AN NHÂN DÂN</h2>
+                <p class="pt-2">Đối với tự mình, phải cần, kiệm, liêm, chính</p>
+                <p class="pt-1">Đối với đồng sự, phải thân ái giúp đỡ</p>
+                <p class="pt-1">Đối với Chính phủ, phải tuyệt đối trung thành</p>
+                <p class="pt-1">Đối với nhân dân, phải kính trọng, lễ phép</p>
+                <p class="pt-1">Đối với công việc, phải tận tụy</p>
+                <p class="pt-1">Đối với địch, phải cương quyết, khôn khéo.</p>
+    
+            </div>
+            <div class="content-row-2 mr-auto flex flex-row flex-1 ml-16 rounded outline-none">
+                <div class="flex flex-1">
+                    <input type="text" title="Nhap tim kiem" class="leading-6 py-2 pl-4 pr-16 w-4/6 outline-none focus:shadow-custom_redish" placeholder="Nhập thông tin tìm kiếm">
+                    <div class="search font-medium text-center flex-1 border-l">
+                        <select title="opt" name="opt" id="opt" class="h-full py-1.5 px-2.5 outline-none">
+                            <option value="vi">Tra cứu dịch vụ công trực tuyến</option>
+                        </select>
+                    </div>
+                    <div class="font-medium text-center flex-1 rounded text-white">
+                        <a href="#" class="search flex items-center justify-center bg-red-600 h-full pl-4 pr-5 rounded-r" title="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-</body>
-</html>
+    </div>
+<!--  -->
+    <div class="w-full flex items-center bg-white_ish py-4 justify-center">
+        <div class="container max-w-1200 w-full py-4 flex items-center">
+            <div class="overflow-hidden">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-caret-left px-2 mr-2.5 text-lg hover:text-red-600 hover:cursor-pointer"></i>
+                    <div class="w-full flex items-center overflow-hidden">
+                        <div class="slide w-longlong flex flex-row">
+                            <div class="news w-slidele p-1 px-2 mr-7">
+                                <a href="" class="cursor-default">
+                                    <h3 class="hover:text-red-600 hover:cursor-pointer">Công an Hà Nội hoàn thiện Cơ sở dữ liệu quốc gia về dân cư: Chặng nước rút cuối cùng</h3>
+                                    <p class="time mt-2.5 opacity-70">12/2/2222</p>
+                                </a>
+                            </div>
+                            <div class="news w-slidele p-1 px-2 mr-7">
+                                <a href="" class="cursor-default">
+                                    <h3 class="hover:text-red-600 hover:cursor-pointer">Công an Hà Nội hoàn thiện Cơ sở dữ liệu quốc gia về dân cư: Chặng nước rút cuối cùng</h3>
+                                    <p class="time mt-2.5 opacity-70">12/2/2222</p>
+                                </a>
+                            </div>
+                            <div class="news w-slidele p-1 px-2 mr-6">
+                                <a href="" class="cursor-default">
+                                    <h3 class="hover:text-red-600 hover:cursor-pointer">Công an Hà Nội hoàn thiện Cơ sở dữ liệu quốc gia về dân cư: Chặng nước rút cuối cùng</h3>
+                                    <p class="time mt-2.5 opacity-70">12/2/2222</p>
+                                </a>
+                            </div>
+                            <div class="news w-slidele p-1 px-2 mr-7">
+                                <a href="" class="cursor-default">
+                                    <h3 class="hover:text-red-600 hover:cursor-pointer">Công an Hà Nội hoàn thiện Cơ sở dữ liệu quốc gia về dân cư: Chặng nước rút cuối cùng</h3>
+                                    <p class="time mt-2.5 opacity-70">12/2/2222</p>
+                                </a>
+                            </div>
+                            <div class="news w-slidele p-1 px-2 mr-7">
+                                <a href="" class="cursor-default">
+                                    <h3 class="hover:text-red-600 hover:cursor-pointer">Công an Hà Nội hoàn thiện Cơ sở dữ liệu quốc gia về dân cư: Chặng nước rút cuối cùng</h3>
+                                    <p class="time mt-2.5 opacity-70">12/2/2222</p>
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                    <i class="fa-solid fa-caret-right px-2 ml-2.5 text-lg hover:text-red-600 hover:cursor-pointer"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!--     
+    <div class="main w-full h-calced1 flex justify-center py-3">
+        <div class="main-container max-w-1200 w-full pb-4 flex">
+            <div class="path flex w-full h-6 items-center text-orange-300 my-3">
+                <ul class="flex flex-1 ml-2 items-center">
+                    <li class="">
+                        <a href="#" class="hover:underline">Trang chủ</a>
+                    </li>
+                    <li class="">
+                    <i class="fa-solid fa-caret-right mx-1"></i>
+                    <a href="#" class="hover:underline"> Bộ thủ tục</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-row-1">
+                <div class="">
+                    <h2 class="">
+    
+                    </h2>
+                </div>
+    
+                <ul class="">
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                </ul>
+            </div>
+            <div class="main-row-2">
+    
+            </div>
+        </div>
+    </div> -->
+
+    </body>
+    </html>

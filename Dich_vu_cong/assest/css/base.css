@@ -4,4 +4,6 @@
 
 body{
     font-family: 'UTM-Alexander', Arial;
+    font-weight: 500;
+    display: block;
 }
