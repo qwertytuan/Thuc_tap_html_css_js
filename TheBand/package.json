@@ -6,5 +6,8 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4"
-  }
+  },
+  "scripts": {
+  "build": "npx tailwindcss -i ./assest/css/base2.css -o ./assest/css/style.css --watch"
+}
 }
