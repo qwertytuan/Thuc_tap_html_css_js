@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 module.exports = {
-  content: ["D:/Thuc_tap/TheBand/html/modal-test.html"],
+  content: ["D:/Thuc_tap/TheBand/html/*.html"],
   theme: {
     extend: {
       colors:{

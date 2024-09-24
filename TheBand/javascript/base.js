@@ -122,3 +122,26 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(element);
   });
 });
+
+function playmusic(){
+
+  const audio=document.getElementById('audio');
+  if(audio.paused)
+    audio.play();
+}
+
+function pausemusic(){
+  const audio=document.getElementById('audio');
+  if(!audio.paused)
+    audio.pause();
+}
+
+function click(){
+    const audio=document.getElementById('audio');
+    audio.click();
+    console.log('clicked');
+}
+
+
+
+
